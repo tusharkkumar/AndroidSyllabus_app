@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#612e"
+
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main"
+    tools:context=".MainActivity"
+    android:gravity="top">
+
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/edu" />
+
+    <ScrollView
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/imageView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:fillViewport="false" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView2"
+            android:autoText="false"
+            android:text="Education is the process of facilitating learning, or the acquisition of knowledge, skills, values, beliefs, and habits. Educational methods include storytelling, discussion, teaching, training, and directed research. Education frequently takes place under the guidance of educators, but learners may also educate themselves.A right to education has been recognized by some governments, including at the global level: Article 13 of the United Nations&apos; 1966 International Covenant on Economic, Social and Cultural Rights recognizes a universal right to educationEducation began in prehistory, as adults trained the young in the knowledge and skills deemed necessary in their society. In pre-literate societies this was achieved orally and through imitation. Story-telling passed knowledge, values, and skills from one generation to the next. As cultures began to extend their knowledge beyond skills that could be readily learned through imitation, formal education developed. Schools existed in Egypt " />
+    </ScrollView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotate icon"
+        android:id="@+id/buts"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/imageView2"
+        android:layout_toEndOf="@+id/imageView2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="40dp"
+        style="@android:style/TextAppearance.Material.Button" />
+
+</RelativeLayout>
